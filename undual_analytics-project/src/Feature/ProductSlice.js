@@ -47,9 +47,6 @@ export const fetchProductsAndCategories = () => async (dispatch) => {
     const productsResponse = await axios.get('https://dummyjson.com/products');
     dispatch(setProducts(productsResponse.data.products));
 
-    // If you want to derive categories from products (optional)
-    const uniqueCategories = [...new Set(productsResponse.data.products.map(product => product.category))];
-    dispatch(setCategories(uniqueCategories));
   } catch (error) {
     console.error('Error fetching data:', error);
   }
