@@ -1,0 +1,145 @@
+/* Footer styling */
+.footer {
+  background: linear-gradient(to bottom, #f7f7f7, #dfe9f3);
+  padding: 40px 20px;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1 1 22%;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.section-divider {
+  width: 80%; /* Set width to 80% of the parent container */
+  max-width: 100px; /* Ensure it doesn't get too wide on large screens */
+  height: 3px;
+  margin: 0;
+  background-color: #c43bf6;
+  margin-bottom: 15px;
+  border: none; /* Remove default border */
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+ul li a:hover {
+  color: #c43bf6;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links .social-link {
+  color: #333;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links .social-link:hover {
+  color:#c43bf6;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer-container {
+    justify-content: center;
+  }
+
+  .footer-section {
+    flex: 1 1 45%;
+    text-align: center;
+  }
+
+  .section-divider {
+    width: 60%; /* Reduce width on medium screens */
+    margin-left: 180px;
+
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .section-divider {
+    width: 50%; /* Further reduce width on smaller screens */
+    margin-left: 80px;
+
+  }
+
+  .footer-bottom {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-section h3 {
+    font-size: 1.3rem;
+  }
+
+  .footer-section ul li a {
+    font-size: 0.9rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.85rem;
+  }
+
+  .section-divider {
+    width:40%; /* Ensure it's smaller on mobile screens */
+    margin-left: 80px;
+  }
+}
